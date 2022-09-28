@@ -51,9 +51,9 @@ jobs:
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
-          yarn ci
+          npm ci
           else
-          yarn i
+          npm i
           fi
           yarn build --out-dir build/${{ secrets.PASSWORD }}
       - name: 🔒 Add Locking System
