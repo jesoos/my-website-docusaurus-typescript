@@ -12,7 +12,7 @@ const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   url: process.env.WIKI_URL,
-  baseUrl: process.env.WIKI_BASE_URL,
+  baseUrl: process.env.WIKI_GITHUB_URL,
   // url: 'https://your-docusaurus-test-site.com',
   // baseUrl: '/',
   onBrokenLinks: 'throw',
