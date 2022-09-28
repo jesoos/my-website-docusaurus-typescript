@@ -12,7 +12,7 @@ const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   url: process.env.WIKI_URL,
-  baseUrl: process.env.WIKI_GITHUB_URL,
+  baseUrl: process.env.WIKI_BASE_URL,
   // url: 'https://your-docusaurus-test-site.com',
   // baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -42,14 +42,16 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            process.env.WIKI_GITHUB_URL,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            process.env.WIKI_GITHUB_URL,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
